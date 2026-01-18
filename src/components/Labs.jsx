@@ -11,10 +11,10 @@ const Labs = () => {
   ];
 
   const labImages = [
-    { id: 1, desc: 'طلاب في معمل الإلكترونيات' , img : "8.jpeg"},
-    { id: 2, desc: 'تجارب فيزيائية عملية', img : "12.jpeg" },
+    { id: 1, desc: 'طلاب في معمل الإلكترونيات' , img : "8.webp"},
+    { id: 2, desc: 'تجارب فيزيائية عملية', img : "12.webp" },
     { id: 3, desc: 'مشاريع برمجة متقدمة' , img : "13.jpeg"},
-    { id: 4, desc: 'ورش عمل جماعية' , img : "10.jpeg"}
+    { id: 4, desc: 'ورش عمل جماعية' , img : "10.webp"}
   ];
 
   return (
