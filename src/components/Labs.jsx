@@ -11,10 +11,10 @@ const Labs = () => {
   ];
 
   const labImages = [
-    { id: 1, desc: 'طلاب في معمل الإلكترونيات' , img : "8.webp"},
-    { id: 2, desc: 'تجارب فيزيائية عملية', img : "12.webp" },
-    { id: 3, desc: 'مشاريع برمجة متقدمة' , img : "13.jpeg"},
-    { id: 4, desc: 'ورش عمل جماعية' , img : "10.webp"}
+    { id: 1, desc: 'طلاب في معمل الإلكترونيات' , img : "https://res.cloudinary.com/dklctkxog/image/upload/v1768777790/8_lin6wj.webp"},
+    { id: 2, desc: 'تجارب فيزيائية عملية', img : "https://res.cloudinary.com/dklctkxog/image/upload/v1768777778/12_mkosup.webp" },
+    { id: 3, desc: 'مشاريع برمجة متقدمة' , img : "https://res.cloudinary.com/dklctkxog/image/upload/v1768777785/13_on069o.jpg"},
+    { id: 4, desc: 'ورش عمل جماعية' , img : "https://res.cloudinary.com/dklctkxog/image/upload/v1768777786/10_eizz4x.webp"}
   ];
 
   return (
