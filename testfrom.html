@@ -1,0 +1,51 @@
+<!-- test-google-form.html -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>اختبار جوجل فورمز</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { max-width: 500px; margin: 0 auto; }
+        input, select { width: 100%; padding: 10px; margin: 5px 0; }
+        button { background: #FFD700; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>اختبار إرسال إلى جوجل فورمز</h2>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeq1COioNTQ91cBe-zLMzbA9NaeWLD9HXnPMnj_FJmhDjgPVg/formResponse" 
+          method="POST" target="_blank">
+        
+        <label>الاسم الكامل:</label>
+        <input type="text" name="entry.268892088" value="أحمد محمد" required>
+        
+        <label>العمر:</label>
+        <input type="number" name="entry.672624373" value="15" required>
+        
+        <label>الصف الدراسي:</label>
+        <input type="text" name="entry.2008720831" value="الصف الأول الثانوي" required>
+        
+        <label>رقم هاتف الطالب:</label>
+        <input type="tel" name="entry.921090979" value="01012345678" required>
+        
+        <label>رقم هاتف ولي الأمر:</label>
+        <input type="tel" name="entry.773901722" value="01098765432" required>
+        
+        <label>البرنامج:</label>
+        <select name="entry.856694613" required>
+            <option value="Teens for Systems Embedded">Teens for Systems Embedded</option>
+            <option value="Experiments Lab Physics">Experiments Lab Physics</option>
+            <option value="Logic & Solving Problem">Logic & Solving Problem</option>
+        </select>
+        
+        <button type="submit">إرسال اختبار</button>
+    </form>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            alert('تم الإرسال! تحقق من صفحة الردود في جوجل فورمز.');
+        });
+    </script>
+</body>
+</html>

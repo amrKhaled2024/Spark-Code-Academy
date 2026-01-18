@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-navy text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+  
+  .spark-gradient {
+    @apply bg-gradient-to-r from-spark to-spark-light;
+  }
+  
+  .navy-gradient {
+    @apply bg-gradient-to-br from-navy via-navy-light to-navy-lighter;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-center;
+  }
+  
+  .accent-border {
+    @apply border-r-4 border-spark pr-4;
+  }
+}
+
+.glow-effect {
+  box-shadow: 0 0 30px rgba(255, 213, 0, 0.3);
+}
+
+.img{
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1{
+  background-image: url("4.png");
+}
+
+.img2{
+  background-image: url("3.png");
+}
+.img3{
+  background-image: url("5.jpeg");
+}
+.img4{
+  background-image: url("6.jpeg");
+}
+
+.NotAv{
+  background-color: brown;
+}
+
+.available-btn{
+  background-color: green;
+}
+
+
+
+/* Fix dropdown styling */
+select {
+  background-color: #0a192f !important;
+  color: white !important;
+}
+
+select option {
+  background-color: #0a192f !important;
+  color: white !important;
+  padding: 12px !important;
+}
+
+select option:hover {
+  background-color: #FFD70020 !important;
+}
+
+select:focus option:checked {
+  background: linear-gradient(45deg, #FFD700, #FFE55C) !important;
+  color: #0a192f !important;
+  font-weight: bold !important;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: #112240;
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background: #FFE55C;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
